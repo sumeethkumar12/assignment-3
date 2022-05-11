@@ -1,0 +1,44 @@
+\documentclass[journel,11pt,two column]{IEEEtran}
+\usepackage{amsmath, amssymb,amsfonts}
+
+\usepackage{enumitem}
+\usepackage{tfrupee}
+\usepackage{enumerate}
+\usepackage{set space}
+\title{Assignment 3 \\ \Large AI1110: Probability and Random Variables \\ \large Indian Institute of Technology Hyderabad}
+\author{sumeeth kumar\\ \normalsize AI21BTECH11008 \\ }
+\begin{document}
+ \maketitle
+ \begin{abstract}
+     This document contains the solution for assignment 3(CBSE 12 Maths ex-13.3 question 7)
+ \end{abstract}
+ \textbf{Question 13.3(7):}
+ An insurance company insured 2000 scooter drivers, 4000 car drivers and 6000 truck drivers. The probability of an accidents are 0.01, 0.03 and 0.15, respectively. One of the insured persons meets with an accident. What is the probability that he is a scooter driver?\\
+ \textbf{Solution:}
+ Let $ E_1$ be the event that the driver is a scooter driver, $E_2$ be the event that the driver is a car driver and $E_3$ be the event that the driver is a truck driver.\\
+ Total number of drivers = $2000+4000+600=1200$\\
+ Then,\\
+ \begin{align}
+  & { \Pr[E_1]=\dfrac{2000}{12000}=\frac{1}{6}}\\[8pt]
+  &{\Pr[E_2]=\dfrac{4000}{12000}=\frac{1}{3}}\\[8pt]
+  &{\Pr[E_3]=\dfrac{6000}{12000}=\frac{1}{2}}
+  \end{align}
+   Let A be the event that the person meet with an accident.
+   now,\\
+   \begin{align}
+    &{ \Pr[A|E_1]=\frac{1}{100}}\\[8pt] 
+    &{\Pr[A|E_2]=\frac{3}{100}}\\[8pt]
+    &{\Pr[A|E_3]=\frac{15}{100}}
+    \end{align}
+    Now the probability that the driver is a scooter driver, being given that 
+    he met with an accident, is \Pr[$E_1|A$].\\
+ \begin{multline}
+     \Pr[E_1|A]=\\\frac{\Pr[E_1].\Pr[A|E_1]}{\Pr[E_1].\Pr[A|E_1]+\Pr[E_2].\Pr[A|E_2]+\Pr[E_1].\Pr[A|E_1]}
+  \end{multline}
+  by substituting values we get,
+  \begin{align}
+  & { \Pr[E_1|A]= \dfrac{(\frac{1}{6})(\frac{1}{100})}{(\frac{1}{6})(\frac{1}{100})+(\frac{1}{3})(\frac{3}{100})+(\frac{1}{2})(\frac{15}{100})}}\\[8pt]
+  &{ \Pr[E_1|A]= \dfrac{1}{52}}\\[8pt]
+  &{\implies \Pr(E_1|A)=\dfrac{1}{52}}
+  \end{align}
+\end{document}
